@@ -1,0 +1,149 @@
+* {
+  margin: 0%;
+}
+.containerParent {
+  padding: 10px;
+  background-color: whitesmoke;
+  position: sticky;
+  width: 100%;
+}
+
+.containerChild {
+  width: 90%;
+  margin: 0% 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placeSearch {
+  width: 16em;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border: 2px solid #002f34;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.placeSearch ::selection {
+  border-color: #23e5db;
+  outline-color: #23e5db;
+}
+
+.placeSearch input {
+  border-color: transparent;
+  outline-color: transparent;
+}
+
+.productSearch {
+  width: 35em;
+  height: 48px;
+  border: 2px solid #002f34;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productSearch .input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.productSearch .input input {
+  border-color: transparent;
+  outline-color: transparent;
+  width: 100%;
+  align-items: center;
+}
+
+.productSearch .searchAction {
+  min-width: 48px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  background-color: #002f34;
+  border-radius: 0 4px 4px 0;
+}
+
+.productSearch .searchAction svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+}
+
+.language {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.language span {
+  /* justify-content: space-between;
+  align-items: center; */
+  font-size: 15px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.language svg {
+}
+
+.span {
+  text-decoration: none;
+  font-size: 16px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.loginPage hr {
+  margin: 0;
+  background-color: black;
+  height: 1px;
+}
+
+.loginPage a {
+  text-decoration: none;
+}
+
+/* Sell Plus Button Css is in Index.css */
+
+@media only screen and (max-width: 456px) {
+  .placeSearch,
+  .language,
+  .sellMenu {
+    display: none;
+  }
+  .productSearch {
+    width: 50%;
+  }
+  .containerChild {
+    margin: 0% 0.4em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .placeSearch,
+  .language,
+  .sellMenu {
+    display: none;
+  }
+  .productSearch {
+    width: 50%;
+  }
+  .containerChild {
+    margin: 0% 0.4em;
+  }
+}

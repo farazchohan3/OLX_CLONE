@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+* {
+  margin: 0%;
+}
+.header {
+  background-color: whitesmoke;
+}
+
+/* Sell + button CSS */
+.sellMenu {
+  position: relative;
+  cursor: pointer;
+}
+
+.sellMenu .all {
+  fill: white;
+}
+
+.sellMenu .top {
+  fill: #23e5db;
+}
+
+.sellMenu .left {
+  fill: #ffce32;
+}
+
+.sellMenu .right {
+  fill: #3a77ff;
+}
+.sellMenu .sellMenuContent {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #19191a;
+}
+.sellMenu .sellMenuContent span {
+  margin-left: 5px;
+}
+.footer {
+  width: 100%;
+}
+.prodcut-detailImg {
+  display: none;
+}
+@media only screen and (max-width: 456px) {
+  .sellMenu {
+    display: none;
+  }
+  #carouselExampleControls {
+    display: none;
+  }
+  .prodcut-detailImg {
+    display: block;
+    margin-bottom: 1em;
+  }
+}

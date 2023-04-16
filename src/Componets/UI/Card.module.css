@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.parent {
+  width: 20%;
+  margin: 0 auto;
+}
+.cardBody {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4em;
+}
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+.footerContent {
+  font-size: 0.8em;
+}
+@media (max-width: 546px) {
+  .parent {
+    width: 40%;
+  }
+}
